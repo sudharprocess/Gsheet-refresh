@@ -1,0 +1,7 @@
+streamlit
+pandas
+gspread
+oauth2client
+gspread_dataframe
+openpyxl
+rapidfuzz
