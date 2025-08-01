@@ -21,7 +21,7 @@ def get_google_sheet_data():
     client = gspread.authorize(creds)
     
     # Replace with your actual Google Sheet name and worksheet name
-    sheet = client.open_by_key("1Sl5dEnnY5WzWUXFK9OTn5Wf_M6uRLsJCA-rH5-gR8f4")
+    sheet = client.open_by_key("https://docs.google.com/spreadsheets/d/1Sl5dEnnY5WzWUXFK9OTn5Wf_M6uRLsJCA-rH5-gR8f4/edit?gid=330252221#gid=330252221")
     worksheet = sheet.get_worksheet(0)  # First tab
     df = get_as_dataframe(worksheet, evaluate_formulas=True, dtype=str)
     return df
